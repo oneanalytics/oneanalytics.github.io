@@ -1,3 +1,302 @@
----
-layout: front
----
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="jquery.calendar.js"></script>
+        
+ 
+        <link rel="stylesheet" href="jquery.calendar.css" />
+        <style>
+                .listEvents-nav{
+                    display:inline-block;
+                    width: 30%;
+                    border-top: 0px;
+                    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);   
+                }
+
+                .events-nav{
+                    background-color: rgb(48, 139, 34);
+                    height: 39px;
+                    text-align: center;
+                    margin-top: -15.8px;
+                }
+
+                .event-bar{
+                    list-style-type: none;
+                    line-height: 1.5px;
+                    margin-left: 0px;
+                    text-align: left;
+                    padding-left: 0px;
+
+                }
+
+                .event-name{
+                    border-bottom: 1px solid #ededed;
+                    padding-left: 5px;
+                }
+
+                                /* The Modal (background) */
+                .modal {
+                    display: none; /* Hidden by default */
+                    position: fixed; /* Stay in place */
+                    z-index: 1; /* Sit on top */
+                    padding-top: 100px; /* Location of the box */
+                    left: 0;
+                    top: 0;
+                    width: 100%; /* Full width */
+                    height: 100%; /* Full height */
+                    overflow: auto; /* Enable scroll if needed */
+                    background-color: rgb(0,0,0); /* Fallback color */
+                    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                }
+                
+                /* Modal Content */
+                .modal-content {
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 80%;
+                }
+                
+                /* The Close Button */
+                .close {
+                    color: #aaaaaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+                
+                .close:hover,
+                .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                
+                .modal-content > input {
+                    display: block;
+                    margin: 10px;
+                }
+                
+                .input-section > h5 {
+                    display: inline-block;
+                    width:50px;
+                }
+
+                .input-section > input{
+                    width: 50%;
+                    height:30px;
+                }
+        </style>
+	</head>
+	<body>
+		<div id="jquery-script-menu">
+            <div class="jquery-script-center">
+        </div>
+        <div class="jquery-script-clear"></div>
+        </div>
+        </div>
+		<section style="max-width:80%;margin:150px auto;">
+            <div class="calendarApp" style="display:flex">
+                    <div class="listEvents-nav">
+                        <div class="events-nav">
+                            <p style="padding-top: 10px;">List Event</p>
+                            <div class="my-todolist">
+                                <ul class="event-bar">
+                                    <li class="event-name">
+                                        <h4>Dasboard Todo List</h4>
+                                        <p>20.03.2019</p>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div style="width: 64%;display: inline-block;">
+                        <div id="pnlEventCalendar" style="width: 100%;">
+                                <p>selected date: <b><span id="lblEventCalendar">[date]</span></b></p>
+                        </div>
+                           
+                    </div>   
+            </div>
+        </section>
+        <!-- The Modal -->
+<div id="myModal" class="modal" style="margin-top:60px;">
+    <!-- Modal content -->
+    <div class="modal-content" style="width:50%;">
+      <span class="close">&times;</span>
+      <h3>Calendar For <p style="display:inline-block;"></p></h3>
+      <h4 id='dengerPopup'></h4>
+      <div class="input-section">
+        <h5>Name :</h5>
+        <input class="input-calendar" type="text" name="name">
+      </div>
+      <div class="input-section">
+        <h5>Time :</h5>
+        <input class="input-calendar" type="text" name="time">
+      </div>
+      <div class="input-section">
+        <h5>Email :</h5>
+        <input class="input-calendar" type="text" name="email">
+      </div>
+      <button id="saveEvent">Save</button>
+      <button id="clearEvent">Clear Event</button>
+    </div>
+  
+  </div>
+	</body>
+    <script>
+            $(function () {
+				$('#pnlEventCalendar').calendar({months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+					days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],onSelect: function (event) {
+					$('#lblEventCalendar').text(event.label);
+				}});
+            });
+            
+
+        $(document).ready(function() {
+
+            var selectedDate = '';
+            var monthYear = '';
+            var dateVal = '';
+            var listEvent = ['a'];
+            var colorDate = ["Red","yellow","green"];
+            var calendarNameField = '';
+            var calendarTimeField = '';
+            var calendarEmailField = '';
+
+            
+
+            $('tbody > tr > td').click(function(){
+                console.log('tes')
+                   var selectedDate = $(this).text();
+                   var monthsYear = $('.header-label').text();
+                   $("#myModal").css("display", "block");
+                   $('.modal-content > h3 > p').append(selectedDate+" "+monthsYear);
+            });
+
+            $('.close').click(function(){
+                $("#myModal").css("display", "none");
+                $('.modal-content > h3 > p').empty();
+            })
+            
+
+            $('div').click(function(){
+
+  
+
+                //$("#myModal").css("display", "block");
+         
+                // do something in the background
+
+                if($(this).attr("class") == 'close'){
+                    console.log('tes');
+                }
+            });
+
+            $('#saveEvent').click(function(){
+                console.log('Tes');
+                calendarNameField = $('input[name="name"]').val(); 
+                calendarTimeField = $('input[name="time"]').val();
+                calendarEmailField = $('input[name="email"]').val();
+                var eventDate = $('.modal-content > h3 > p').text();
+                var listVariableForm = [calendarNameField,calendarTimeField,calendarEmailField];
+                var listVariable = '';
+
+                for(var i=0;i<listVariableForm.length;i++){
+                    if(listVariableForm[i] != ''){
+                        if(listVariable == ''){
+                            listVariable = listVariable;
+                        }else{
+                            listVariable = listVariable+", "+listVariable[i];    
+                        }
+                    
+                    }
+                }
+
+                if(calendarNameField == '' || calendarTimeField == '' || calendarEmailField == ''){
+                    $('#dengerPopup').append('Please add '+listVariable+' to save event');
+                }else{
+                    if(localStorage.getItem("eventList1") || localStorage.getItem("eventList1") || localStorage.getItem("eventList1") ){
+                        $('#dengerPopup').empty();
+                        console.log(localStorage.getItem("eventList1"));
+                        $('#dengerPopup').append('You can not added again the event, you should delete your events first');
+                    }else{
+                        var indexColorCurr = 0;
+                        var indexColor = localStorage.getItem("indexColor");
+                        if(indexColor != ''){
+                            indexColorCurr++;
+                        }
+                       
+
+                        if(!localStorage.getItem("eventList1") ){
+                            var eventDetails = [calendarNameField,calendarTimeField,calendarEmailField,"Green",eventDate];
+                            localStorage.setItem('eventList1',JSON.stringify(eventDetails));
+                        }else if(!localStorage.getItem("eventList2") ){
+                            var eventDetails = [calendarNameField,calendarTimeField,calendarEmailField,"Yellow",eventDate];
+                            localStorage.setItem('eventList2',JSON.stringify(eventDetails));
+                        }else{
+                            var eventDetails = [calendarNameField,calendarTimeField,calendarEmailField,"Red",eventDate];
+                            localStorage.setItem('eventList3',JSON.stringify(eventDetails));   
+                        }
+                     
+                        dateNow = "Mar 2019";
+                        setColor(dateNow);
+
+                    }
+                    
+                }
+            })
+            function setColor(dateNow){
+                if(localStorage.getItem("eventList1") != null){
+                    var indexDate = localStorage.getItem("eventList1")[4];
+                    var backgroundColor = localStorage.getItem("eventList1")[3];
+                    pickColor(indexDate, backgroundColor)
+                }else if(localStorage.getItem("eventList2") != null){
+                    var indexDate = localStorage.getItem("eventList2")[4];
+                    var backgroundColor = localStorage.getItem("eventList2")[3];
+                    pickColor(indexDate, backgroundColor);
+
+                   
+                }else{ 
+                    var indexDate = localStorage.getItem("eventList3")[4];
+                    var backgroundColor = localStorage.getItem("eventList3")[3];
+                    pickColor(indexDate, backgroundColor)
+
+                    
+                }
+            }
+
+            function pickColor(indexDate, backgroundColor){
+                var space = indexDate.indexOf(" ");
+                    var months = indexDate.substring(space+1);
+                    if($("calendar-header>header-label").text() == months){
+                        var currDate = indexDate.substring(0,2);
+                        $("tbody>tr>td:contains('+currDate+')").css("background-color", backgroundColor )
+                    } 
+            }
+
+            
+        });
+    </script>
+ 
+</
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+l>
