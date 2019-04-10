@@ -37,12 +37,7 @@
     overflow-x:hidden;
   }
   
-  #page{
-    padding:0px;
-    margin:0px;
-    width:100%;
-    max-width:100%;
-  }
+
   
   .col-solution{
       display:flex;
