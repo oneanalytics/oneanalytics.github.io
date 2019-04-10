@@ -1,190 +1,10 @@
 <html>
    <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <style>
-  .carousel-caption{
-   padding-bottom:40px;
-  }
-  
-  .carousel-caption > button{
-    font-weight:bold;
-    background-color:#329fff;
-    border:0px;
-    width:150px;
-    height:45px;
-    border-radius:5px;
-  }
-  
-  .block-nav{
-    text-align:center;
-  }
-  
-
-	.nav-solution{
-		box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-		margin-bottom:15px;
-		padding:15px;
-	}
-  
-	.nav-solution:hover{
-		box-shadow :0 5px 15px rgba(0,0,0,0.3);
-  }
-  
- 
-	
-	.nav-solution > i{
-	    font-size:50px;
-	}
-  
-	html{
-      font-family:"Open Sans",Verdana,"DejaVu Sans","Geneva CY",sans-serif;
-      overflow-x:hidden;
-    }
-	
-    #page{
-      padding:0px;
-      margin:0px;
-      width:100%;
-      max-width:100%;
-    }
-	
-	.col-solution{
-		display:flex;
-  }
-  
-  .certified-partner > .col-md-8 > .col-md-4 {
-    margin-top: 25px;
-  }
-  
-  .left-side{
-    text-align: right;
-  }
-
-  .right-side{
-    text-align: left;
-  }
-
-  .meet-the-team > .col-md-10 > .col-md-8 > h3{
-    text-transform: uppercase;
-    margin:0px;
-    padding: 0px;
-  }
-
- .row {
-   padding: 40px;
- }
-
- .meet-the-team-row > .col-md-8 > h3 {
-   text-transform: uppercase;
- }
-  
- .meet-the-team-row{
-   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-   padding: 0 20px;
- }
-
- .meet-the-team-row:hover{
-  box-shadow :0 5px 15px rgba(0,0,0,0.3);
- }
-
- .our-certification{
-      padding: 0px;
-      margin: 0 40px;
- }
-
- .heading-certification{
-  background-color: #ebf0f5;
-  padding: 4px;
- }
-
- .product-title > span{
-  color: #1e88e5;
-  font-weight: bold;
-  font-size: 18px;
- }
-
- .product-description{
-  font-size: 18px;
-  font-weight: 400;
- }
-
- .content-certification{
-  padding: 15px;
-  text-align: left;
-  background-color: white;
- }
-
- .our-certification > .col-md-12 > .col-md-4{
-    padding: 25px;
- }
-
- .testimoni-client > .col-md-10 > .col-md-4{
- 
-  padding: 20px;
- }
-
- .testimoni{
-   background-color: white;
- }
-
- .header-testimoni{
-    padding: 30px 0;
-    border-bottom: 1px solid #ddd;
- }
-
- .body-testimony{
-   padding: 20px;
- }
-
- .name{
-  display: inline-block;
-  text-align: left;
-  margin-bottom: 25px;
- }
-
- .testimoni-field{
-  font-size: 18px;
-  font-weight: 400;
- }
-
- .name > h5 {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 10px;
- }
-	    .banner-front > img{
-	    	  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
-	    }
-
-	@media only screen and (max-width: 1024px)  {
-    .meet-the-team-row > .col-md-4  {
-      text-align: center;
-    }
-	  .col-solution{
-		display:block;
-    }
-    
-		.carousel-caption > h2 {
-			font-weight:bold;
-			font-size:18px;
-		}
-    .nav-solution{
-      margin-left:0px !important;
-      margin-right:0px !important;
-    }
-
-    .toolbox > .col-md-10 > .col-md-6 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-	}
-  </style>
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./content-layout.css">
 </head>
    <body>
    <div class="container" style="width:100%;padding:0px;">
@@ -284,8 +104,11 @@
           </div>
       </div>
   </div>
-  <div class="row" style="background-color: #f9f9f9">
+  <div class="row full-content" style="background-color: #f9f9f9">
+     
       <div class="block-nav our-certification">
+          <h3>Certifications</h3>
+
           <div class="col-md-12">
               <div class="col-md-4">
                 <div class="testimoni">
@@ -336,22 +159,27 @@
            
             <div class="row meet-the-team-row">
                 <h3>Meet The team</h3>
-                <div class="col-md-4 left-side">
-                    <img src="https://static1.squarespace.com/static/55669207e4b0783941de676d/t/57ce6b8620099e446292397d/1490786570484/alvin-liong?format=500w" style="width:150px;height:150px;">
+                <div class="content-photo" style="margin:20px 0">
+                    <div class="col-md-4 left-side">
+                        <img src="https://static1.squarespace.com/static/55669207e4b0783941de676d/t/57ce6b8620099e446292397d/1490786570484/alvin-liong?format=500w" style="width:150px;height:150px;">
+                    </div>
+                    <div class="col-md-8 right-side">
+                        <h3 class="text-align-center" style="margin:0px;"><strong>alvin liong</strong></h3>
+                        <h3 style="margin-top:0px;">co-founder - ceo</h3>
+                        <p>Alvin has utilized Analytics to drive Performance Marketing results at Ogilvy and Digitas for Fortune 100 and 500 clients, delivering ROI of 7x for e-commerce centric businesses ranging from hospitality to finance. He recently used these techniques to implement lean operations at an offline, traditional commodities business in Indonesia.</p>
+                    </div>
                 </div>
-                <div class="col-md-8 right-side">
-                    <h3 class="text-align-center" style="margin:0px;"><strong>alvin liong</strong></h3>
-                    <h3 style="margin-top:0px;">co-founder - ceo</h3>
-                    <p>Alvin has utilized Analytics to drive Performance Marketing results at Ogilvy and Digitas for Fortune 100 and 500 clients, delivering ROI of 7x for e-commerce centric businesses ranging from hospitality to finance. He recently used these techniques to implement lean operations at an offline, traditional commodities business in Indonesia.</p>
+                <div class="content-photo" style="margin:20px 0" >
+                    <div class="col-md-4 left-side">
+                        <img src="https://static1.squarespace.com/static/55669207e4b0783941de676d/t/57ce6b8620099e446292397e/1464682405248/timo-josten?format=500w" style="width:150px;height:150px;">
+                    </div>
+                    <div class="col-md-8 right-side">
+                        <h3 class="text-align-center" style="margin:0px;"><strong>timo josten</strong></h3>
+                        <h3 style="margin-top:0px;">co-founder - director</h3>
+                        <p>Timo worked at Google on client solutions and product development of Google Analytics to better serve the unique challenges faced by multi-national corporations based in APAC. He then co-founded a digital analytics consultancy in Singapore to help regional brands and large MNCs utilize data to develop actionable business insights.</p>
+                    </div>
                 </div>
-                <div class="col-md-4 left-side">
-                    <img src="https://static1.squarespace.com/static/55669207e4b0783941de676d/t/57ce6b8620099e446292397e/1464682405248/timo-josten?format=500w" style="width:150px;height:150px;">
-                </div>
-                <div class="col-md-8 right-side">
-                    <h3 class="text-align-center" style="margin:0px;"><strong>timo josten</strong></h3>
-                    <h3 style="margin-top:0px;">co-founder - director</h3>
-                    <p>Timo worked at Google on client solutions and product development of Google Analytics to better serve the unique challenges faced by multi-national corporations based in APAC. He then co-founded a digital analytics consultancy in Singapore to help regional brands and large MNCs utilize data to develop actionable business insights.</p>
-                </div>
+                
             </div>
           </div>
       </div>
@@ -361,12 +189,12 @@
           <h3>Toolbox</h3>
               <div class="col-md-10 col-md-offset-1" >
                   <div class="col-md-6 left-side">
-                      <img src="https://adanamanya.github.io/img/comscorenew.png" style="width:160px;height:24;pxmargin:0 15px;">
-                      <img src="https://adanamanya.github.io/img/logo_lockup_analytics_icon_vertical_black_2x.png" style="width:160px;height:121px;margin:0 15px;">
+                      <img src="https://adanamanya.github.io/img/comscorenew.png" style="width:120px;margin:0 15px;">
+                      <img src="https://adanamanya.github.io/img/logo_lockup_analytics_icon_vertical_black_2x.png" style="width:120px;margin:0 15px;">
                   </div>
                   <div class="col-md-6 right-side">
-                      <img src="https://adanamanya.github.io/img/ga-360-suite.png" style="width:120px;height:120px;margin:0 15px;">
-                      <img src="https://adanamanya.github.io/img/optimize360new.png" style="width:100px;height:100px;margin:0 15px;">
+                      <img src="https://adanamanya.github.io/img/ga-360-suite.png" style="width:120px;margin:0 15px;">
+                      <img src="https://adanamanya.github.io/img/optimize360new.png" style="width:120px;margin:0 15px;">
                   </div>
                  
               </div>
@@ -385,116 +213,279 @@
       </div> 
       <div class="row" >
           <div class="block-nav company" >
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12">
                 <h3>Company we have work with</h3>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
+                <div class="container nav-corousel">
+                  <div id="myCarouselTest" class="carousel slide corosel-content" data-ride="carousel">
+                   
                 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                       <div class="item active">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
+                        <div class="content-courosel absolute" style="text-align: center;">
+                            <div class="col-md-10 col-md-offset-1" style="text-align: center;">
+                              <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png">
+                              <img src="http://i.imgur.com/92NKvay.png" >
+                              <img src="http://i.imgur.com/nXGrmbD.png" >
+                              <img src="http://i.imgur.com/EWUbeLA.png" >
+                            </div>
+                        </div>
                       </div>
                       <div class="item">
-                          <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        
+                          <div class="content-courosel absolute" style="text-align: center;">
+                              <div class="col-md-10 col-md-offset-1" style="text-align: center;">
+                                <img src="https://super.mataharimall.com/cmt/files/images/mataharimall_logo.png">
+                                <img src="http://i.imgur.com/X3hpO3D.png" >
+
+                                <img src="http://i.imgur.com/EkbM8x6.png" >
+                                <img src="http://i.imgur.com/DiKbeKY.png" >
+                              </div>
+                          </div>
                       </div>
                       <div class="item">
-                          <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        <img src="http://i.imgur.com/TaiLEFi.png" alt="Analytics Consultant" style="display:inline-block;margin:0 20px;width:114px;height:15px;">
-                        
+                          <div class="content-courosel absolute" style="text-align: center;">
+                              <div class="col-md-10 col-md-offset-1" style="text-align: center;">
+                                <img src="https://www.seva.id/static/media/Seva_Logo.1dfc93f1.png">
+                                <img src="https://st.3.cn/jdf/1.0.0/unit-id/search/1.0.1/i/logo_2017.png" >
+
+                                <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/logos/IKEA_logo.svg" >
+                                <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" >
+                              </div>
+                          </div>
                       </div>
                     </div>
                 
                     <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <a class="left carousel-control" href="#myCarouselTest" data-slide="prev">
                       <span class="glyphicon glyphicon-chevron-left"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <a class="right carousel-control" href="#myCarouselTest" data-slide="next">
                       <span class="glyphicon glyphicon-chevron-right"></span>
                       <span class="sr-only">Next</span>
                     </a>
-                  </div> 
-            </div>
-               
-          </div>  
-          
-      </div>
-      <div class="row" style="background-color:#1e88e5">
-          <div class="block-nav testimoni-client">
-              <div class="col-md-10 col-md-offset-1">
-                <div class="col-md-4">
-                    <div class="testimoni">
-                        <div class="header-testimoni">
-                            <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
-                        </div>
-                        <div class="body-testimony">
-                          <div class="name">
-                            <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
-                            <h5>Lingga Madu</h5>
-                          </div>
-                          <div class="testimoni-field">
-                            <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
-      
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testimoni">
-                        <div class="header-testimoni">
-                            <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
-                        </div>
-                        <div class="body-testimony">
-                          <div class="name">
-                            <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
-                            <h5>Lingga Madu</h5>
-                          </div>
-                          <div class="testimoni-field">
-                            <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
-      
-                          </div>
-                        </div>
-                    </div>
+                     <!-- Indicators -->
+                    
                   </div>
-                  <div class="col-md-4">
-                      <div class="testimoni">
-                          <div class="header-testimoni">
-                              <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                  
+                </div>      
+                <ol class="carousel-indicators content">
+                  <li data-target="#myCarouselTest" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarouselTest" data-slide-to="1"></li>
+                  <li data-target="#myCarouselTest" data-slide-to="2"></li>
+                </ol>     
+            </div>
+           
+          </div>  
+            
+      </div>
+      <div class="row" style="background-color:#1e88e5" >
+          <div class="block-nav company" >
+            <div class="col-md-12">
+                <h3 style="margin-bottom:50px;">Company we have work with</h3>
+                <div class="container nav-corousel" style="padding-bottom:10px;">
+                  <div id="myCarouselTestimoni" class="carousel slide corosel-content" data-ride="carousel">
+                   
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <div class="content-courosel" style="text-align: center;">
+                            <div class="col-md-10 col-md-offset-1" style="text-align: center;">
+                                <div class="col-md-4">
+                                    <div class="testimoni">
+                                        <div class="header-testimoni">
+                                            <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                        </div>
+                                        <div class="body-testimony">
+                                          <div class="name">
+                                            <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                            <h5>Lingga Madu</h5>
+                                          </div>
+                                          <div class="testimoni-field">
+                                            <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                      
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="testimoni">
+                                        <div class="header-testimoni">
+                                            <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                        </div>
+                                        <div class="body-testimony">
+                                          <div class="name">
+                                            <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                            <h5>Lingga Madu</h5>
+                                          </div>
+                                          <div class="testimoni-field">
+                                            <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                      
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="testimoni">
+                                          <div class="header-testimoni">
+                                              <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                          </div>
+                                          <div class="body-testimony">
+                                            <div class="name">
+                                              <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                              <h5>Lingga Madu</h5>
+                                            </div>
+                                            <div class="testimoni-field">
+                                              <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                        
+                                            </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                          <div class="content-courosel" style="text-align: center;">
+                                <div class="col-md-10 col-md-offset-1" style="text-align: center;">
+                                  <div class="col-md-4">
+                                      <div class="testimoni">
+                                          <div class="header-testimoni">
+                                              <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                          </div>
+                                          <div class="body-testimony">
+                                            <div class="name">
+                                              <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                              <h5>Lingga Madu</h5>
+                                            </div>
+                                            <div class="testimoni-field">
+                                              <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                        
+                                            </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="testimoni">
+                                          <div class="header-testimoni">
+                                              <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                          </div>
+                                          <div class="body-testimony">
+                                            <div class="name">
+                                              <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                              <h5>Lingga Madu</h5>
+                                            </div>
+                                            <div class="testimoni-field">
+                                              <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                        
+                                            </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="testimoni">
+                                            <div class="header-testimoni">
+                                                <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                            </div>
+                                            <div class="body-testimony">
+                                              <div class="name">
+                                                <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                                <h5>Lingga Madu</h5>
+                                              </div>
+                                              <div class="testimoni-field">
+                                                <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                          
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                              </div>
                           </div>
-                          <div class="body-testimony">
-                            <div class="name">
-                              <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
-                              <h5>Lingga Madu</h5>
-                            </div>
-                            <div class="testimoni-field">
-                              <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
-        
-                            </div>
+                      </div>
+                      <div class="item">
+                          <div class="content-courosel-absolute" style="text-align: center;">
+                                <div class="col-md-10 col-md-offset-1" style="text-align: center;">
+                                  <div class="col-md-4">
+                                      <div class="testimoni">
+                                          <div class="header-testimoni">
+                                              <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                          </div>
+                                          <div class="body-testimony">
+                                            <div class="name">
+                                              <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                              <h5>Lingga Madu</h5>
+                                            </div>
+                                            <div class="testimoni-field">
+                                              <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                        
+                                            </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="testimoni">
+                                          <div class="header-testimoni">
+                                              <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                          </div>
+                                          <div class="body-testimony">
+                                            <div class="name">
+                                              <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                              <h5>Lingga Madu</h5>
+                                            </div>
+                                            <div class="testimoni-field">
+                                              <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                        
+                                            </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="testimoni">
+                                            <div class="header-testimoni">
+                                                <img src="https://www.salestockindonesia.com/assets/images/logo-ss-34f2d4dd.png" style="width: 160px;height: 68px;">
+                                            </div>
+                                            <div class="body-testimony">
+                                              <div class="name">
+                                                <img src="https://adanamanya.github.io/img/AAEAAQAAAAAAAANPAAAAJDMzMjcwOGE2LWQxMmQtNDc3Yy1iYTBmLTlhMGExZTc2NGMxZg.jpg" style="width:100px;height:100px;border-radius:50%;" />
+                                                <h5>Lingga Madu</h5>
+                                              </div>
+                                              <div class="testimoni-field">
+                                                <p>IlmuOne Data helped us a shrewder customer of digital and mobile marketing services. They provided a guiding light on how to navigate the scene and get more bang for our bucks.</p>
+                          
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
                           </div>
                       </div>
                     </div>
-              </div>
-          </div>
-          
-      </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarouselTestimoni" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarouselTestimoni" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                     <!-- Indicators -->
+                    
+                  </div>
+                  
+                </div>      
+                <ol class="carousel-indicators content">
+                  <li data-target="#myCarouselTestimoni" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarouselTestimoni" data-slide-to="1"></li>
+                  <li data-target="#myCarouselTestimoni" data-slide-to="2"></li>
+                </ol>     
+            </div>
+           
+          </div>  
+            
+      </div>      
 </div>
    </body>
    <script>

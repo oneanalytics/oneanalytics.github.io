@@ -1,0 +1,229 @@
+.carousel-caption{
+ padding-bottom:40px;
+}
+
+.carousel-caption > button{
+  font-weight:bold;
+  background-color:#329fff;
+  border:0px;
+  width:150px;
+  height:45px;
+  border-radius:5px;
+}
+
+.block-nav{
+  text-align:center;
+}
+
+
+  .nav-solution{
+      box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+      margin-bottom:15px;
+      padding:15px;
+  }
+
+  .nav-solution:hover{
+      box-shadow :0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+  
+  .nav-solution > i{
+      font-size:50px;
+  }
+
+  html{
+    font-family:"Open Sans",Verdana,"DejaVu Sans","Geneva CY",sans-serif;
+    overflow-x:hidden;
+  }
+  
+  #page{
+    padding:0px;
+    margin:0px;
+    width:100%;
+    max-width:100%;
+  }
+  
+  .col-solution{
+      display:flex;
+}
+
+.certified-partner > .col-md-8 > .col-md-4 {
+  margin-top: 25px;
+}
+
+.left-side{
+  text-align: right;
+}
+
+.right-side{
+  text-align: left;
+}
+
+.meet-the-team > .col-md-10 > .col-md-8 > h3{
+  text-transform: uppercase;
+  margin:0px;
+  padding: 0px;
+}
+
+.row {
+ padding: 40px;
+}
+
+.meet-the-team-row > .col-md-8 > h3 {
+ text-transform: uppercase;
+}
+
+.meet-the-team-row{
+ box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+ padding: 0 20px;
+}
+
+.meet-the-team-row:hover{
+box-shadow :0 5px 15px rgba(0,0,0,0.3);
+}
+
+.our-certification{
+    padding: 0px;
+    margin: 0 40px;
+}
+
+.heading-certification{
+background-color: #ebf0f5;
+padding: 4px;
+}
+
+.product-title > span{
+color: #1e88e5;
+font-weight: bold;
+font-size: 18px;
+}
+
+.product-description{
+font-size: 18px;
+font-weight: 400;
+}
+
+.content-certification{
+padding: 15px;
+text-align: left;
+background-color: white;
+}
+
+.our-certification > .col-md-12 > .col-md-4{
+  padding: 25px;
+}
+
+.testimoni-client > .col-md-10 > .col-md-4{
+
+padding: 20px;
+}
+
+.testimoni{
+ background-color: white;
+}
+
+.header-testimoni{
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.body-testimony{
+ padding: 20px;
+}
+
+.content-photo > .col-md-8 > h3{
+  text-transform: uppercase;
+}
+.name{
+display: inline-block;
+text-align: left;
+margin-bottom: 25px;
+}
+
+.testimoni-field{
+font-size: 18px;
+font-weight: 400;
+}
+
+.name > h5 {
+display: inline-block;
+font-size: 18px;
+font-weight: bold;
+margin-left: 10px;
+}
+
+.corosel-content > .carousel-control {
+    background-image: none;
+}
+
+.carousel-indicators.content {
+    position: relative;
+    bottom: 0px;
+}
+
+.carousel-indicators.content > li {
+  border: 1px solid #ddd;
+}
+
+.carousel-indicators.content .active {
+  background-color: black;
+}
+
+
+  .content-courosel.absolute > .col-md-10 > img {
+    width: 160px;
+    margin: 20px;
+  } 
+
+  .content-courosel.absolute > .col-md-10 {
+    height: 160px;
+    margin-top: 10px;
+  } 
+
+
+  @media only screen and (max-width: 1024px)  {
+    .meet-the-team-row > .col-md-4  {
+    text-align: center;
+    }
+
+    .col-solution{
+      display:block;
+    }
+
+    .content-courosel.absolute > .col-md-10 > img {
+     width: 100px;
+     margin: 0 10px;
+    } 
+
+    .content-courosel.absolute > .col-md-10 {
+      height: auto;
+      margin-top: 10px;
+    } 
+
+    .nav-solution{
+      margin-left:0px !important;
+      margin-right:0px !important;
+    }
+
+    .toolbox > .col-md-10 > .col-md-6 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .our-certification{
+      margin: 0px;
+    }
+
+    .full-content{
+      padding: 0px;
+    }
+
+    .content-photo > .col-md-4 {
+      text-align: center;
+    }
+
+    .content-photo > .col-md-4 {
+      margin: 20px 0;
+    }
+  }
