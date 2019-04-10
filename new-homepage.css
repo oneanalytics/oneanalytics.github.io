@@ -1,0 +1,25 @@
+.block-nav{
+    text-align:center;
+}
+
+.nav-solution{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    margin-bottom:15px;
+    padding:15px;
+}
+   
+.nav-solution:hover{
+    box-shadow :0 5px 15px rgba(0,0,0,0.3);
+}
+   
+.nav-solution > i{
+    font-size:50px;
+}
+   
+     
+     
+   
+     @media only screen and (max-width: 1024px)  {
+
+     }
+   
