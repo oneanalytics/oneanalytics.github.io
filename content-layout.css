@@ -3,6 +3,10 @@ html{
   font-size:13px;
   font-family:"Open Sans",Verdana,"DejaVu Sans","Geneva CY",sans-serif;
 }
+
+body{
+  overflow-x: hidden;
+}
 .carousel-caption{
  padding-bottom:40px;
 }
