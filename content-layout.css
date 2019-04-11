@@ -1,5 +1,7 @@
 html{
   overflow-x: hidden;
+  font-size:13px;
+  font-family:"Open Sans",Verdana,"DejaVu Sans","Geneva CY",sans-serif;
 }
 .carousel-caption{
  padding-bottom:40px;
@@ -35,10 +37,7 @@ html{
       font-size:50px;
   }
 
-  html{
-    font-size:13px;
-    font-family:"Open Sans",Verdana,"DejaVu Sans","Geneva CY",sans-serif;
-  }
+ 
   
 
   
