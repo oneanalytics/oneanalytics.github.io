@@ -1,29 +1,109 @@
 body{
-    font-size: 20px !important;
-    overflow: hidden;
-}
-.block-nav{
-    text-align:center;
+ font-family: "Open Sans",Verdana,"DejaVu Sans","Geneva CY",sans-serif;
+ font-size:16px;
 }
 
-.nav-solution{
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    margin-bottom:15px;
+.row{
+    padding: 25px;
+}
 
+.general-content{
+    padding: 20px 0;
 }
-   
-.nav-solution:hover{
-    box-shadow :0 5px 15px rgba(0,0,0,0.3);
+
+/* Header Tiitle */
+.general-content#header {
+    text-align: center;
 }
-   
-.nav-solution > i{
-    font-size:50px;
+
+.header-button {
+    display: inline-block;
+    margin: 0 10px;
 }
+.header-button > a > button {
+    border: none;
+}
+
+.header-button > a > button > p{
+    border: none;
+    text-align: center;
+    border: none;
+    width: 180px;
+    border-radius: 3px;
+    padding: 6px 20px;
+    margin: 0px;
+}
+/*Header Title End*/
+
+/* Tech Content */
+.image-content{
+    display: inline-block;
+}
+
+.image-nav{
+    width: 160px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    height: 160px;
+    padding: 15px 0;
+    margin: 10px;
+    display: inline-block;
+}
+
+.image-content > .image-nav > img {
+    margin: 10px;
+    width: 70px;
+}
+
+.image-content > .image-nav > img#thirdLine {
+    margin: 10px;
+    width: 55px;
+}
+
+.image-content > .image-nav > .text-img {
+    font-size: 11px;
+    height: 40px;
+    padding: 5px;
+}
+/* Tech Content End*/
    
-@media (max-width: 1024px) {
-    html {
-        font-size: 32px !important;
+@media (max-width: 1200px) {
+    /* Header Tiitle */
+    .header-button {
+        display: block;
+        margin: 10px 0px;
     }
+    /* Header Title End */
+
+    /* Tech Content */
+    .image-content > .image-nav > img {
+        margin: 10px;
+        width: 100px;
+    }
+
+    .image-nav{
+        width: 120px;
+        height: 120px;
+        padding: 10px 0;
+        margin: 10px 0px;
+        display: inline-block;
+    }
+    
+    .image-content > .image-nav > img {
+        width: 42px;
+    }
+
+    .image-content > .image-nav > img#thirdLine {
+        margin: 10px;
+        width: 30px;
+    }
+    
+    .image-content > .image-nav > .text-img {
+        font-size: 10px;
+        height: 30px;
+    }
+    /* Tech Content End */
 }
      
    
