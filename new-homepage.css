@@ -106,5 +106,18 @@ body{
     /* Tech Content End */
 }
      
+@media (max-width: 640px) {
+    .image-nav{
+        width: 110px;
+        height: 110px;
+        padding: 10px 0;
+        margin: 10px 0px; 
+    }
+
+    .image-content > .image-nav > .text-img{
+        font-size: 8px;
+    }
+}
+
    
      
