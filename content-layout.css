@@ -11,6 +11,15 @@ body{
 .row{
   padding: 25px;
 }
+
+.title-black {
+  color: black;
+}
+
+.title-white{
+  color: white;
+}
+
 .carousel-caption{
  padding-bottom:40px;
 }
@@ -28,28 +37,21 @@ body{
   text-align:center;
 }
 
-
-  .nav-solution{
-      box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-      margin-bottom:15px;
-      padding:15px;
-  }
-
-  .nav-solution:hover{
-      box-shadow :0 5px 15px rgba(0,0,0,0.3);
+.nav-solution{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  margin-bottom:15px;
+  padding:15px;
 }
 
+.nav-solution:hover{
+  box-shadow :0 5px 15px rgba(0,0,0,0.3);
+}
 
+.nav-solution > i{
+  font-size:50px;
+}
   
-  .nav-solution > i{
-      font-size:50px;
-  }
-
- 
-  
-
-  
-  .col-solution{
+.col-solution{
       display:flex;
 }
 
@@ -65,13 +67,33 @@ body{
   text-align: left;
 }
 
+.banner-front > h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.banner-front > img {
+  max-width: 700px;
+}
+
+.banner-front > button {
+  border: 3px solid white;
+  background-color: transparent;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.banner-front > button > p {
+  margin: 0px;
+}
+
 .meet-the-team > .col-md-10 > .col-md-8 > h3{
   text-transform: uppercase;
   margin:0px;
   padding: 0px;
 }
-
-
 
 .meet-the-team-row > .col-md-8 > h3 {
  text-transform: uppercase;
@@ -92,25 +114,25 @@ box-shadow :0 5px 15px rgba(0,0,0,0.3);
 }
 
 .heading-certification{
-background-color: #ebf0f5;
-padding: 4px;
+  background-color: #ebf0f5;
+  padding: 4px;
 }
 
 .product-title > span{
-color: #1e88e5;
-font-weight: bold;
-font-size: 18px;
+  color: #1e88e5;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .product-description{
-font-size: 18px;
-font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .content-certification{
-padding: 15px;
-text-align: left;
-background-color: white;
+  padding: 15px;
+  text-align: left;
+  background-color: white;
 }
 
 .our-certification > .col-md-12 > .col-md-4{
@@ -126,6 +148,28 @@ padding: 20px;
  background-color: white;
 }
 
+.testimoni-content > .col-md-12 {
+  display: flex;
+  margin-left: 2%;
+}
+
+.testimoni-content > .col-md-12 > .col-md-4 {
+  background-color: white;
+  padding: 0 20px;
+  width: 30%;
+  margin: 0 1%;
+}
+
+
+#myCarouselTestimoni > .left > .glyphicon-chevron-left {
+  left: 0;
+}
+
+#myCarouselTestimoni > .right > .glyphicon-chevron-right {
+  right: 0;
+}
+
+
 .header-testimoni{
   padding: 30px 0;
   border-bottom: 1px solid #ddd;
@@ -138,10 +182,40 @@ padding: 20px;
 .content-photo > .col-md-8 > h3{
   text-transform: uppercase;
 }
-.name{
-display: inline-block;
-text-align: left;
-margin-bottom: 25px;
+
+.body-testimony > .name{
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.body-testimony > .name > img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.body-testimony > .name > .client-profile{
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.body-testimony > .name > .client-profile > h5{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.testimoni-content > .col-md-10 {
+  display: flex;
+  padding: 2%;
+}
+
+.testimoni-content > .col-md-10 > .col-md-4 {
+  display: flex;
+  background-color: white;
+  width: 32%;
+  margin: 1%;
 }
 
 .testimoni-field{
@@ -174,19 +248,325 @@ margin-left: 10px;
 }
 
 
-  .content-courosel.absolute > .col-md-10 > img {
-    width: 160px;
-    margin: 20px;
-  } 
+.content-courosel.absolute > .col-md-10 > img {
+  width: 160px;
+  margin: 20px;
+} 
 
-  .content-courosel.absolute > .col-md-10 {
-    height: 160px;
-    margin-top: 10px;
-  } 
+.content-courosel.absolute > .col-md-12 {
+  height: 160px;
+  margin-top: 10px;
+} 
+
+.nav-team{
+ box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+ margin: 20px 0;
+ position: relative;
+}
+
+.nav-team:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+ }
+
+.title-team{
+  position: absolute;
+  max-width: 100px;
+  background-color: #2C5197;
+  color: white;
+  top: 0px;
+  padding-top: 30px;
+}
+
+.nav-team > .col-md-5 > img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+} 
+
+.nav-team > .col-md-5 > h3,h4 {
+  text-transform: uppercase;
+} 
+
+.toolbox > .col-md-10 > .col-md-6 > img {
+  width: 120px;
+  margin: 15px;
+}
+
+/* footer */
+.footer-content{
+  color:#fff;
+}
+
+.footer-content > .col-md-5 > img{
+  width: 150px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.nav-address-footer, .nav-contact-footer > div > h5,p{
+ display: inline-block;
+}
+
+.nav-address-footer, .nav-contact-footer > div > p > a{
+  text-decoration: none;
+  color: #fff;
+ }
+
+.content-social-media > a {
+  display: inline-block;
+  margin:20px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
 
 
-  @media only screen and (max-width: 1024px)  {
+/* footer End */
+
+/* funding Client */
+#client-funding > thead > tr  {
+  color: white;
+  background-color:#36304a;
+  height:60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#client-funding > tbody > tr {
+  height: 80px;
+}
+
+#client-funding > tbody > tr > td > p {
+  margin: 0 10px;
+  display:block;
+}
+#client-funding > tbody > tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+/* funding Client End */
+
+.nav-to-portfolio > a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-footer-funding > a{
+  text-align: right;
+  font-weight:bold;
+}
+
+/* event content */
+
+.col-md-7 > h5,col-md-7 > h3 {
+  color:#979fa4;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.col-md-7 > a {
+  color:#979fa4;
+  text-decoration: none;
+}
+
+.register-event > a{
+  text-decoration:none;
+}
+
+.event-content > .col-md-10 {
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.event-content > .col-md-10.nav-event:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card-event > .col-md-5 {
+  padding-top: 40px;
+}
+/* event content end */
+
+
+/* career content */
+
+.nav-career-title{
+  text-align: center;
+}
+
+.nav-position-avail{
+  background-color: #1e88e5;
+}
+
+.nav-position-avail > h4 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.nav-position{
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-position > h5 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.nav-position-detail{
+  text-align: right;
+  display: block !important;
+  right: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  right: 25px !important;
+  position: absolute;
+  right: 15px;
+  color: white;
+  top: 15px;
+}
+
+.full-block-position{
+  width:100%;
+}
+/* career content end */
+
+/* event page */
+.nav-event > .col-md-5 > img {
+  height: 150px;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+.nav-event > .col-md-3 {
+  color: black;
+}
+
+.nav-menu{
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-menu > .form-group {
+  margin-bottom: 0px;
+}
+
+.card-event{
+  margin: 10px 0;
+}
+
+.register-event > button {
+  padding-top: 10px;
+  width: 150px;
+  background-color: #337ab7;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.register-event > button:hover {
+  background-color: #329fff;
   
+ 
+}
+
+.register-event > button > a:hover{
+ text-decoration: none;
+ color: white;
+}
+
+.card-title-from{
+  text-align: center;
+  padding: 20px;
+
+}
+
+.card-title-from h3,i{
+  display: inline-block;
+}
+
+.card-body-form {
+  font-size: 16px;
+  padding: 20px;
+}
+
+.card-body-form > div > p{
+  width: 120px;
+
+}
+
+.card-body-form > div > i{
+  font-style: normal;
+}
+
+
+.wrapper-form > div > a{
+  position: absolute;
+  top: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* event page end */
+
+
+/* new content */
+.heading-nav-content > h4 {
+  display: inline;
+}
+
+/* new content end */
+  @media only screen and (max-width: 1024px)  {
+    .testimoni-content > .col-md-12 {
+      display: block;
+      margin-left: 0;
+    }
+
+    .testimoni-content > .col-md-12 > .col-md-4 {
+      padding: 0 20px;
+      width: 90%;
+      margin: 0 5% 20px 5%;
+    }
+
+    .banner-front > h2 {
+      font-size: 14px;
+    }
+    
+    .banner-front > img {
+      max-width: 300px;
+    }
+
+    .testimoni-content > .col-md-10 > .col-md-4 {
+      display: block;
+      background-color: white;
+      width: 98%;
+      margin: 1%;
+    }
+    .title-team{
+      position: absolute;
+      max-width: 100px;
+      background-color: #2C5197;
+      color: white;
+      top: 30px;
+      left: 0px; 
+      padding-top:0px;
+    }
+
+    .testimoni-content > .col-md-10 > .col-md-4 {
+      display: block;
+      background-color: white;
+    }
+
     .meet-the-team-row > .col-md-4  {
     text-align: center;
     }
@@ -230,4 +610,13 @@ margin-left: 10px;
     .content-photo > .col-md-4 {
       margin: 20px 0;
     }
+  }
+
+
+  @media only screen and (max-width: 1024px)  {
+    .testimoni-content > .col-md-12 > .col-md-4 {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+
   }

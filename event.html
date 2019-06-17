@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+        <link rel="icon" type="image/png" href="http://static1.squarespace.com/static/55669207e4b0783941de676d/t/5746671345bf21640f01d184/1464231700237/IlmuOneData.jpg?format=1500w">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="./content-layout.css">
+        <style>
+            .body{
+                font-size:14px;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- Event Page Header Upcoming Event-->
+            <div class="row nav-event">
+               
+                <div class="col-md-5 col-md-offset-2">
+                    <h3>Next Event</h3>
+                    <img src="https://cdn-images-1.medium.com/max/1600/0*kD2IZAYEmT1gOlpS">	    
+                </div>
+                <div class="col-md-3">
+                    <h3>Attribution Modelling in Google Analytics and Beyond</h3>
+                    <div class="card-event-date"><p>FRI, June 14, 9:30 AM</p></div>
+                    <div class="card-event-location"><i class="fas fa-map-marker" style="font-size:18px;margin-right:5px;display:inline-block;"></i><p>Pacific Century Plae</p></div>      
+                    <div class="card-share">
+                        <div class="content-social-media" style="color:#e4e9ed;border-top:2px solid #ddd;border-bottom: 2px solid #ddd;">
+                            <i style="font-style:normal;font-size:24px;color:#555">Share :</i>
+                            <a href="https://www.facebook.com/profile.php?id=100009332141131" style="color:#555;font-weight:bold;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100009332141131" style="color:#555;font-weight:bold;"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/ilmuOnedata"><i class="fab fa-twitter" style="color:#555;font-weight:bold;"></i></a>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+            <!-- Event Page Header Upcoming Event End -->
+            <!-- header menu  event -->
+            <div class="row nav-menu">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="form-group" style="width:150px;margin-bottom:0px;">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Upcoming</option>
+                            <option>Past</option>
+                        </select>
+                    </div>
+                </div>
+            </div>            
+            <!-- header menu event end -->
+            <!-- wrapper body event -->
+            <div class="row" id="eventList" style="background-color:#e4e9ed;">
+                <div class="col-md-8 col-md-offset-2" id="card-event">
+                    <div class="row" id="listEvents" style="padding:0" >
+                        <div class="card-event col-md-10" style="background-color:white;">
+                            <div class="col-md-7">
+                                <h5>FRI, June 14, 9:30 AM</h5>
+                                <h3>Atrribution Modeling in Google Analytics and Beyond</h3>
+                                <a href="https://www.google.com/maps/place/Pacific+Century+Place/@-6.2275996,106.8073708,18z/data=!4m5!3m4!1s0x2e69f1507b9e93c7:0x816b740649fbf6bc!8m2!3d-6.2275996!4d106.8084651"><i class="fas fa-map-marker" style="font-size:18px;margin-right:5px;"></i><p>Pacific Century Place</p></a>
+                                <p>An attribution model is the rule, or set of rules, that determines how credit for sales and conversions is assigned to touchpoints in conversion paths. ...</p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="https://cdn-images-1.medium.com/max/1600/0*kD2IZAYEmT1gOlpS" style="width:150px">
+                            </div>
+                            <div class="col-md-12" style="text-align:right;">
+                                <h5 class="register-event"><a href="">Register here<i class="fas fa-arrow-right" style="margin-left:5px;margin-bottom:10px;"></i></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- wrapper body event end -->
+
+            <!-- form Registration Event -->
+            <div class="row" id="registerEvent" style="background-color:#e4e9ed;display:none;">
+                <div class="wrapper-form">
+                    <div class="col-md-6 col-md-offset-2" style="background-color:white;">
+                        <a href=""><i class="fas fa-arrow-left" style="font-size: 24px;"></i></a>
+                        <div class="card-title-from">
+                            <i class="fas fa-calendar-alt" style="font-size: 48px;"></i>
+                            <h3>Register Event</h3>
+                        </div>
+                        
+                        <h5 id="eventName"></h5>
+                        <div class="form-group">
+                            <label for="usr">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Email:</label>
+                            <input type="password" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Phone-number:</label>
+                            <input type="password" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Company/Organization Name:</label>
+                            <input type="password" class="form-control" id="org">
+                        </div>
+                        <div class="register-event" style="text-align:right;">
+                            <button id="register-event-button">
+                                <a  style="color:white">Register here
+                                    <i class="fas fa-arrow-right" style="margin-left:5px;margin-bottom:10px;"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- form registration event closed --> 
+
+            <!-- form Registration Event -->
+            <div class="row" id="confirmationRegister" style="background-color:#e4e9ed;display:none;">
+                    <div class="wrapper-form">
+                        <div class="col-md-4 col-md-offset-4" style="background-color:white;">
+                            <a href=""><i class="fas fa-arrow-left" style="font-size: 24px;"></i></a>
+                            <div class="card-title-from">
+                                <i class="fas fa-check-circle" style="font-size: 60px;display:block;color:#03c036;"></i>
+                                <h3>Thanks for Register</h3>
+                                <h4 style="font-weight:bold;">TensorFlow Dev Summit 2019</h4>
+                            </div>
+                            <div class="card-body-form">
+                                <div>
+                                    <p>Registration Id</p><i>:1234</i>
+                                </div>
+                                <div>
+                                    <p>Name</p><i>: Budi</i>
+                                </div>
+                                <div>
+                                    <p>Email</p><i>: budi@gmail.com</i>
+                                </div>
+                            </div>   
+                            <div class="register-event" style="text-align:right;">
+                                <button style="width:200px;">
+                                    <a  href="https://calendar.google.com/calendar/r/eventedit?overrides" target="blank" style="color:white">Add to Calendar
+                                        <i class="fas fa-arrow-right" style="margin-left:5px;margin-bottom:10px;"></i>
+                                    </a>
+                                </button>
+                            </div>               
+                        </div>
+                    </div>
+                </div>
+                <!-- form registration event closed --> 
+        </div>
+    </body>
+    <script async defer src="./spreedsheetapi.js"></script>
+    </script>
+    <script>
+        $('document').ready(function(){
+            console.log('run');
+
+
+            $("#card-event").on('click','.row>.card-event>.col-md-12>.register-event>button',function(){
+                $('#listEvents').remove();
+                $('#registerEvent').css({'display':'block'});
+            })
+
+            $("#register-event-button").click(function(){
+                console.log('teskl');
+                $('#registerEvent').css({'display':'none'});
+                $('#confirmationRegister').css({'display':'block'});
+            });
+
+            $('#exampleFormControlSelect1').change(function(){
+                var statusEvent = $(this).val();
+                $('#registerEvent').css({'display':'none'});
+                $('#confirmationRegister').css({'display':'none'});
+                getListEventsFromStatusEvent(statusEvent);
+               console.log("test");
+            });
+        });
+
+        function getListEventsFromStatusEvent(statusEvent){
+            gapi.client.sheets.spreadsheets.values.get({
+                spreadsheetId: '1QwXOfRzYK7XBfAZGsYHO2Nqk6_IfvEQQqULHt8dSeSM',
+                range: 'Event!A1:G100',
+              }).then(function(response) {        
+                  renderElement(response.result.values,statusEvent)
+              }, function(response) {
+                  return result;
+              });
+        }
+
+        function renderElement(listEvents,statusEvent){
+
+            var eventListRender = listEvents;
+            var listEventElements = '';
+
+            for(var i=1;i<eventListRender.length;i++){
+                if(statusEvent == eventListRender[i][6]){
+
+                    listEventElements +='<div class="card-event col-md-12" style="background-color:white;margin:10px 0;border:1px solid #eeefee;">'+
+                        '<div class="col-md-7">'+
+                                    '<h5>'+eventListRender[i][0]+'</h5><h3>'+eventListRender[i][1]+'</h3>' + '<a href="'+eventListRender[i][2] +'"><i class="fas fa-map-marker" style="font-size:18px;margin-right:5px;"></i><p>'+eventListRender[i][3] +'</p></a>'+
+                                '<p>'+eventListRender[i][4]+'</p></div>'+
+                           '<div class="col-md-5"><img src="'+eventListRender[i][5] +'" style="width:150px"></div>'+
+                        '<div class="col-md-12" style="text-align:right;"><div class="register-event"><button class="register-event"><a style="color:white">Register here<i class="fas fa-arrow-right" style="margin-left:5px;margin-bottom:10px;"></i></a></button></div></div></div>'
+                }
+                
+            }
+            $('#listEvents').remove();
+            $('#card-event').append('<div class="row" id="listEvents" >'+listEventElements+'</div>')
+        }
+
+    </script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    
+</html>
+

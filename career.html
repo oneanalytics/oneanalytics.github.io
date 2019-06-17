@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+        <link rel="icon" type="image/png" href="http://static1.squarespace.com/static/55669207e4b0783941de676d/t/5746671345bf21640f01d184/1464231700237/IlmuOneData.jpg?format=1500w">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="./content-layout.css">
+    </head>
+    <body>
+        <div class="container-fluid" style="padding:0;">
+            <div class="row nav-career-title" style="padding:0px;">
+                <h3 class="title-black center">We are hiring!</h3>
+                <div class="col-md-8 col-md-offset-2">
+                    <h3 class="title-black">Let's grow with us, join our extraordinary team to explore your skill and experience more deeply</h3>
+                </div>
+            </div>
+            <div class="row nav-career" style="padding:0;">
+                <div class="col-md-6 nav-position-avail">
+                    <h4>Available Position</h4>
+                    <div class="nav-position col-md-6 col-md-offset-3">
+                        <h5>Web Analytics Developer</h5>
+                        <a><i class="fas fa-arrow-right" style="display:none"></i></a>
+                    </div>
+                    <div class="nav-position col-md-6 col-md-offset-3">
+                        <h5>Business Development Officer</h5>
+                        <a><i class="fas fa-arrow-right" style="display:none"></i></a>
+                    </div>
+                    <div class="nav-position col-md-6 col-md-offset-3">
+                        <h5>Junior Client Solution</h5>
+                        <a><i class="fas fa-arrow-right" style="display:none"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            var openTabJobOpportunityIndex = '';
+
+            //hover nav position
+            $(".nav-position").hover(function(){
+                console.log($(this).index());
+                var index = $(this).index()-1;
+                $(this).removeClass("col-md-6");
+                $(this).removeClass("col-md-offset-3");
+                $(this).addClass("col-md-8");
+                $(this).addClass("col-md-offset-2");
+                $('.nav-position:eq('+index+') > a > i ').addClass("nav-position-detail");
+            })
+
+            //mouseleave nav position detail
+            $(".nav-position").mouseleave(function(){
+                console.log("leave"+$(this).index());
+                var index = $(this).index()-1;
+                $(this).addClass("col-md-6");
+                $(this).addClass("col-md-offset-3");
+                $(this).removeClass("col-md-8");
+                $(this).removeClass("col-md-offset-2");
+                $('.nav-position:eq('+index+') > a > i ').removeClass("nav-position-detail");
+            })
+
+            $(".nav-position > a > i").click(function(){
+                console.log($(this).parent().index(this));
+                var index = $(this).parent().index() - 1;
+
+                $('.nav-position:eq('+index+')').removeClass("col-md-8");
+                $('.nav-position:eq('+index+')').addClass("col-md-10");
+                $('.nav-position:eq('+index+')').addClass("full-block-position");
+                
+                if(openTabJobOpportunityIndex == ''){
+                    openTabJobOpportunityIndex = index; 
+                }else{
+                    openTabJobOpportunityIndex = index;
+                    $('.nav-position:eq('+openTabJobOpportunityIndex+')').addClass("col-md-6");
+                    $('.nav-position:eq('+openTabJobOpportunityIndex+')').addClass("col-md-3");
+                    $('.nav-position:eq('+openTabJobOpportunityIndex+')').removeClass("col-md-10");
+                    $('.nav-position:eq('+openTabJobOpportunityIndex+')').removeClass("col-md-2");
+                    $('.nav-position:eq('+openTabJobOpportunityIndex+')').removeClass("full-block-position");
+                    $('.nav-position:eq('+openTabJobOpportunityIndex+') > a > i ').removeClass("nav-position-detail");
+                }
+
+
+            });
+
+
+        });
+    </script>
+</html>
