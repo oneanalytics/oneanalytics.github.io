@@ -67,6 +67,15 @@ body{
   text-align: left;
 }
 
+.product-title > img{
+  display:inline-block !important;
+}
+
+.heading-certification > h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .banner-front > h2 {
   font-weight: bold;
   text-transform: uppercase;
