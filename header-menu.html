@@ -13,15 +13,21 @@
         <style>
             /* Add a black background color to the top navigation */
         .topnav {
-            background-color: #333;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+            background-color:white;
             overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 10px;
         }
-        
+
+        .topnav  :not(:first-child){
+          float: right;
+        }
         /* Style the links inside the navigation bar */
         .topnav a {
             float: left;
             display: block;
-            color: #f2f2f2;
+            color: #5f6368;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -47,13 +53,13 @@
 
         .navbar {
           overflow: hidden;
-          background-color: #333;
+          background-color: white;
         }
           
         .navbar a {
           float: left;
           font-size: 16px;
-          color: white;
+          color: #5f6368;
           text-align: center;
           padding: 14px 16px;
           text-decoration: none;
@@ -102,6 +108,7 @@
         /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
+    .topnav div:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
@@ -126,17 +133,25 @@
     </head>
     <body>
         <div class="topnav navbar" id="myTopnav">
-            <a href="#home">Home</a>
-            <div>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            
-        </div>
+          <div>
+              <a href="#home"><img src="http://static1.squarespace.com/static/55669207e4b0783941de676d/t/574d3f9722482ec4b43c6499/1464680343835/IlmuOneData+-+Business+Card.png" style="width:200px;"></a>
+          </div>
+          <a href="#about">
+            <i class="fas fa-calendar-alt" style="font-size: 24px;margin-right:5px;"></i>
+            <p>Event</p>
+          </a>
+          <a href="#about">
+              <i class="fa fa-users" style="font-size: 24px;margin-right:5px;"></i>
+              <p>Solution</p>
+          </a>
+          <a href="#contact">
+            <i class="fas fa-users-cog" style="font-size: 24px;margin-right:5px;"></i>
+            <p>Service</p>
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+       </div>
     </body>
     <script>
             function myFunction() {
@@ -147,5 +162,30 @@
                   x.className = "topnav";
                 }
               }
+
+              window.addEventListener('hashchange', function() {
+                console.log('The hash has changed!')
+              }, false);
+
+              var mainMenu = 
+              "<div class='topnav navbar' id='myTopnav'>"+
+                "<div><a href='#home'><img src='http://static1.squarespace.com/static/55669207e4b0783941de676d/t/574d3f9722482ec4b43c6499/1464680343835/IlmuOneData+-+Business+Card.png' style='width:200px;'></a>"+
+                  "</div>"+
+                    "<a href='#about'>"+
+                      "<i class='fas fa-calendar-alt' style='font-size: 24px;margin-right:5px;'></i>"+
+                      "<p>Event</p>"+
+                    "</a>"+
+                    "<a href='#about'>"+
+                    "<i class='fa fa-users' style='font-size: 24px;margin-right:5px;'></i>"+
+                      "<p>Solution</p>"+
+                    "</a>"+
+                    "<a href='#contact'>"+
+                    "<i class='fas fa-users-cog' style='font-size: 24px;margin-right:5px;'></i>"+
+                    "<p>Service</p>"+
+                  "</a>"+
+                  "<a href='javascript:void(0);' class='icon' onclick='myFunction()'>"+
+                      "<i class='fa fa-bars'></i>"+
+                  "</a>"+
+               "</div>"
     </script>
     </html>
