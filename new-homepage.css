@@ -354,6 +354,14 @@ body{
     top: -15px;
     left: 0px;
    }
+
+   .body-content > .nav-right-content, .flat-nav-right-content{
+    max-width: 400px;
+   }
+
+   .body-content > .flat-nav-right-content > p {
+       max-width: 400px;
+   }
 }
 @media (max-width: 768px) {
     .image-nav {
