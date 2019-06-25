@@ -212,6 +212,7 @@ padding: 20px;
   height: 100px;
   border-radius: 50%;
   display: inline-block;
+  margin-bottom: 25px;
 }
 
 .body-testimony > .name > .client-profile{
