@@ -15,7 +15,7 @@
     <body>
         <div class="container-fluid">
             <!-- solution -->
-            <div class="row">
+            <div class="row" style="padding:0px !important;">
                 <div class="col-md-12">
 
                     <!-- Tech Content-->
@@ -119,14 +119,15 @@
                     </div>
                     <!-- Advisory Content End -->
                     <!-- Portfolio part -->
-                    <div class="row">
+                    <div class="row" style="padding:10px 0px">
                         <div class="menu-content" style="width:100%;border-top: 1px solid rgba(46,62,72,.12);border-bottom: 1px solid rgba(46,62,72,.12);">
-                            <select class="mdb-select md-form">
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
-                            </select>
+                            <div class="form-group" style="width:150px;margin-left:10px;margin-top:15px;">
+                                <select class="form-control" id="portfolioSelected">
+                                    <option meta-id="techPortfolioContent">Technical</option>
+                                    <option meta-id="advPortrfolioContent">Advisory</option>
+                                    <option meta-id="comPortrfolioContent">Optimize</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <!-- Portfolio part-->
@@ -185,7 +186,7 @@
                                         <div class="nav-right-content col-md-9">
                                             <h5>Client Needs</h5>
                                             <img src="https://i.ibb.co/ngjnF5Y/mobilesite.png"/> 
-                                            <p>Tokopedia needs to implement technical implementations for Enhanced Ecommerce tracking within a very short timeline, given their many internal tracking requirements and the allocated resources.</p>
+                                            <p >Tokopedia needs to implement technical implementations for Enhanced Ecommerce tracking within a very short timeline, given their many internal tracking requirements and the allocated resources.</p>
                                         </div>
                                         <div class="nav-right-content col-md-6">
                                             <h5>provided solution</h5>
@@ -223,7 +224,7 @@
                                             <div class="flat-nav-right-content col-md-9">
                                                 <h5>Client Needs</h5>
                                                 <img src="https://i.ibb.co/kJxnP4p/client-needs-jd.png"/> 
-                                                <p>JD Thailand is interested in tracking users across devices and overall track Enhanced Ecommerce events on their devices.</p>
+                                                <p style="max-width:400px;">JD Thailand is interested in tracking users across devices and overall track Enhanced Ecommerce events on their devices.</p>
                                             </div>
                                             <div class="flat-nav-right-content col-md-6" style="height:200px;">
                                                 <h5>provided solution</h5>
@@ -235,8 +236,8 @@
                                         </div>
                                         <div class="body-content-right">
                                             <div class="col-md-12">
-                                                <h5 class="title" style="dispaly:block;">benefit</h5>
-                                                <ul>
+                                                <h5 class="title" style="margin-top:20px;">benefit</h5>
+                                                <ul style="max-width:400px;">
                                                     <li>Increased data visibility & quality through Enhanced Ecommerce tracking</li>
                                                     <li>Able to gain holistic user journey through User-ID implementation </li>
                                                 </ul>
@@ -263,7 +264,7 @@
                     </div>
                     <!-- Portfolio advisory-->
                     <div class="advPortrfolioContent">
-                        <!-- Portfolio Technical -->
+                        <!-- Portfolio Advisory -->
                         <div class="general-content portfolio-content">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2" style="position:absolute;">
@@ -281,14 +282,14 @@
                                             </div>
                                             <div class="flat-nav-right-content col-md-6" style="height:200px;">
                                                 <h5>provided solution</h5>
-                                                <img src="https://i.ibb.co/gtSzMLt/provided-solution-mm.png"/> 
-                                                <p>With an end-to-end knowledge and experience from product standpoint (Google Analytics, Google Optimize, Google Tag Manager) and from front-end code standpoint (HTML, CSS, and Javascript), ilmuOne Data was able to deliver custom implementation used to test user engagement on site for banners with single product vs multiple products.
+                                                <img src="https://i.ibb.co/gtSzMLt/provided-solution-mm.png" style="width:200px;"/> 
+                                                <p style="max-width:380px;">With an end-to-end knowledge and experience from product standpoint (Google Analytics, Google Optimize, Google Tag Manager) and from front-end code standpoint (HTML, CSS, and Javascript), ilmuOne Data was able to deliver custom implementation used to test user engagement on site for banners with single product vs multiple products.
 
 
                                                     </p>
                                             </div>
                                         </div>
-                                        <div class="body-content-right">
+                                        <div class="body-content-right" style="margin-top:20px;">
                                             <div class="col-md-12 nav-text-content">
                                                 <h5 class="title" style="display:block;">impact</h5>
                                                 <h4>+12</h><i class="fas fa-arrow-up" style="font-size:24px;margin:0 5px"></i><h4>BANNER CLICKS</h4>
@@ -312,7 +313,61 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Portfolio Technical -->  
+                        <!-- End Portfolio Advisory -->
+                        <!-- Portfolio Advisory -->
+                        <div class="general-content portfolio-content port-title-content-ma">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2" style="position:absolute;">
+                                    <div class="square-content">
+                                        <div class="title-content" id="port-title-content-ma" >
+                                            <h3 style="color:#ccc">case</h3><h3 style="color:#283690;margin-left:5px;"> study:mister aladin</h3>
+                                            <h4 >OWNED CHANNEL OPTIMIZATION</h4>                                                </h4>
+                                            <img src="https://i.imgur.com/sECVwiS.png" style="width:200px;" />
+                                        </div>
+                                        <div class="body-content">
+                                            <div class="nav-right-content col-md-9 port-title-content-ma">
+                                                <h5>Client Needs</h5>
+                                                <img src="https://i.imgur.com/Q0HbAPY.png"/> 
+                                                <p>Increase conversion rates for their email campaigns, in the form of:Increase conversion rates for their email campaigns, in the form of: Higher Open Rates, Higher Direct Conversion Rate, Higher Assisted Conversion Rate
+                                                 </p>
+                                            </div>
+                                            <div class="nav-right-content col-md-6 port-title-content-ma">
+                                                <h5>provided solution</h5>
+                                                <img src="https://i.imgur.com/uxjh7Vr.png"/> 
+                                                    <ul class="list-item">
+                                                        <li>By identifying 3 most critical elements that affect campaign strategy</li>
+                                                        <li>By improving on User Analysis & Segmentation, performance optimization & A/B Testing</li>
+                                                    </ul>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="body-content-right port-title-content-ma">
+                                            <div class="col-md-12 nav-text-content">
+                                                <h5 class="title" style="display:block;">impact</h5>
+                                                <div><h4>+12</h4><i class="fas fa-arrow-up" style="font-size:24px;margin:0 5px"></i><div class="double-text" style="font-weight:normal;display:inline-block;"><h4>Click Open rate Email Campaign</h4></div></div>
+                                               
+                                                <div class="partial-circle-content">
+                                                    <p>"Alvin and his team managed to surprise me every time with insightful analysis. His team also went beyond their business scope on implementation and execution of the measurement protocol.  This truly showed that he cared about my success and goals!
+                                                            "</p>
+                                                    <h5 style="font-weight:bold;">Teddy Pun, CEO
+
+                                                            Mister Aladin
+                                                            </h5>
+                                                            <img src="http://static1.squarespace.com/static/55669207e4b0783941de676d/t/574d3f9722482ec4b43c6499/1464680343835/IlmuOneData+-+Business+Card.png" style="
+                                                            width: 150px;
+                                                            text-align: left;
+                                                            position: absolute;
+                                                            right: 10px;
+                                                        ">       
+                                                </div>
+                                            </div>                                       
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Advisory -->
+                          
                         <!-- Portfolio new content -->
                         <div class="general-content portfolio-content">
                             <div class="row">
@@ -367,6 +422,59 @@
                         </div>
                         <!-- Portfolio new content end -->
                     </div>
+                    <!-- Portfolio Conscore-->
+                    <div class="comPortrfolioContent">
+                        <!-- Portfolio Advisory -->
+                        <div class="general-content portfolio-content">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2" style="position:absolute;">
+                                        <div class="square-content">
+                                            <div class="title-content">
+                                                <h3 style="color:#ccc">case</h3><h3 style="color:#283690;margin-left:5px;"> STUDY: idEA</h3>
+                                                <h4 >COMSCORE</h4>                                                </h4>
+                                                <img src="https://i.imgur.com/Bzj0UdE.png" style="width:100px;" />
+                                            </div>
+                                            <div class="body-content">
+                                                <div class="nav-right-content col-md-9">
+                                                    <h5>Client Needs</h5>
+                                                    <img src="https://i.imgur.com/SooA6bb.png" style="width:300px;margin:20px"/>
+                                                </div>
+                                                <div class="flat-nav-right-content col-md-6" style="height:200px;width:400px;">
+                                                    <p>As a continuation partnership with Indonesian Digital Measurement Consortium (IDMC), idEA in liaise with ilmuOne Data and ComScore held a routine event of Kamis Commerce inviting all idEA's member, aimed to raise the awareness of the benefit of online audience measurement for idEA's member and also to be involved in a panel discussion of Leveraging Data for Decision Making.</p>
+                                                </div>
+                                            </div>
+                                            <div class="body-content-right">
+                                                <div class="col-md-12 nav-text-content">
+                                                    <h5 class="title" style="display:block;">impact</h5>
+                                                    <div>
+                                                            <img src="https://i.imgur.com/zU3Gccv.png" style="width:95px;display:inline-block;"/>
+                                                            <img src="https://i.imgur.com/DWhLl0C.png" style="width:95px;display:inline-block;"/>
+                                                            <img src="https://i.imgur.com/g19COwd.png" style="width:95px;display:inline-block;"/>
+                                                    </div>                           
+                                                    <div class="partial-circle-content" style="top:35px;">
+                                                        <p>ilmuOne Data as an independent data analytics consultancy provides Kamis Commerce events with industry-leading digital marketing and data analytics solutions of behavior-based segmentation for e commerce</p>
+                                                        <ul>
+                                                            <li>Retail Growth on Internet</li>
+                                                            <li>Retail Growth on Desktop</li>
+                                                            <li>Retail Growth on Mobile</li>
+                                                            <li>Distribution of Total Internet Visitation among heavy, moderate and light users</li>
+                                                        </ul>
+                                                                <img src="http://static1.squarespace.com/static/55669207e4b0783941de676d/t/574d3f9722482ec4b43c6499/1464680343835/IlmuOneData+-+Business+Card.png" style="
+                                                                width: 150px;
+                                                                text-align: left;
+                                                                position: absolute;
+                                                                right: 10px;
+                                                            ">       
+                                                    </div>
+                                                </div>                                       
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio Advisory -->
+                    </div>
+                    <!-- Portfolio Comscrore End-->
                 </div>
             </div>
             <!-- solution end -->
@@ -376,7 +484,30 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
     <script>
         $('document').ready(function(){
-            $('.mdb-select').materialSelect();
+            console.log($('#portfolioSelected').val());
+            var port = $('#portfolioSelected').val();
+            var techPort = "techPortfolioContent";
+
+                var listPortfolioPart = ['techPortfolioContent','advPortrfolioContent','comPortrfolioContent'] 
+                for(var x=0;x<listPortfolioPart.length;x++){
+                    if(listPortfolioPart[x] != $('#portfolioSelected>option').attr('meta-id')                    ){
+                        $("."+listPortfolioPart[x]).css('display','none')
+                    }else{
+                        $("."+listPortfolioPart[x]).css('display','block')
+                    }
+                }
+
+            $('#portfolioSelected').change(function(){
+                if($('#portfolioSelected').val() === 'Technical'){
+                    $(".techPortfolioContent").css('display','block')
+                    $(".advPortrfolioContent").css('display','none')
+                }else if($('#portfolioSelected').val() == 'Advisory'){
+                    $(".techPortfolioContent").css('display','none')
+                    $(".advPortrfolioContent").css('display','block')
+                }
+            })
         })
+
+
     </script>
 </html>

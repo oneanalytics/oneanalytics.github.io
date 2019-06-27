@@ -68,7 +68,7 @@ body{
 }
 
 .image-content > .image-nav > .text-img {
-    font-size: 11px;
+    font-size: 13px;
     height: 40px;
     padding: 5px;
 }
@@ -136,14 +136,30 @@ body{
     left: 0px;
 }
 
-.body-content > .nav-right-content > p {
-    font-size: 12px;
+.image-full-content {
+    top: 50px;
+    position: unset;
+    left: 0px;
+}
+
+.text-full-content {
+    position: unset;
+    max-width: 400px;
+    font-size: 14px;
+    text-align: justify;
+
+}
+
+.body-content > .nav-right-content > p , ul.list-item {
+    font-size: 14px;
     width: 60%;
     position: absolute;
     top: 30px;
     left: 120px;
-    text-align: left;
+    text-align: justify;
 }
+
+
 
 .body-content > .flat-nav-right-content > img{
     width: 100px;
@@ -154,12 +170,12 @@ body{
 }
 
 .body-content > .flat-nav-right-content > p {
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
     position: absolute;
     top: 100px;
     left: 0px;
-    text-align: left;
+    text-align: justify;
 }
 
 .body-content-right {
@@ -168,6 +184,8 @@ body{
     left: 65%;
     text-align: justify;
 }
+
+
 
 .body-content-right > .col-md-12 > h5.title{
     text-transform: uppercase;
@@ -286,6 +304,10 @@ body{
         width: 100px;
     }
 
+    #port-title-content-ma{
+        height: 180px;
+    }
+
     .image-nav{
         width: 120px;
         height: 120px;
@@ -337,6 +359,22 @@ body{
 
     .heading-nav-content{
         height: 180px;
+    }
+
+    .nav-right-content .port-title-content-ma{
+        height:180px;
+    }
+
+    .general-content.portfolio-content.port-title-content-ma {
+        height: 900px;
+    }
+
+    .nav-right-content.col-md-6.port-title-content-ma {
+        margin-top:40px;
+    }
+
+    .body-content-right.port-title-content-ma{
+        margin-top:20px;
     }
     /* new portfolio element end */
 }
