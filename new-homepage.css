@@ -440,7 +440,25 @@ body{
 } 
 
 @media (max-width: 640px) {
+    .body-content > .nav-right-content, .flat-nav-right-content {
+        margin-top: 25px;
+    }
 
+    .portfolio-content{
+        height: 900px;
+    }
+
+    .partial-circle-content{
+        width: 100% !important;;
+    }
+
+    .body-content-right{
+        margin-top: 50px;
+    }
+
+    .partial-circle-content > p {
+        margin: 10px 0;
+    }
 }
 
    

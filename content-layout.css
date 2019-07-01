@@ -296,17 +296,17 @@ margin-left: 10px;
   padding-top: 30px;
 }
 
-.nav-team > .col-md-5 > img {
+.nav-team > .col-md-10 > img {
   border-radius: 50%;
   margin-bottom: 20px;
 } 
 
-.nav-team > .col-md-5 > h3,h4 {
+.nav-team > .col-md-10 > h3,h4 {
   text-transform: uppercase;
 } 
 
 .toolbox > .col-md-10 > .col-md-6 > img {
-  width: 120px;
+  width: 100px;
   margin: 15px;
 }
 
