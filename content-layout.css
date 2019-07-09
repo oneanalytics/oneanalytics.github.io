@@ -195,6 +195,7 @@ padding: 20px;
 
 .body-testimony{
  padding: 20px;
+ text-align:left;
 }
 
 .content-photo > .col-md-8 > h3{
@@ -240,6 +241,7 @@ padding: 20px;
 .testimoni-field{
 font-size: 18px;
 font-weight: 400;
+text-align: justify;
 }
 
 .name > h5 {
@@ -545,6 +547,9 @@ margin-left: 10px;
 }
 
 /* new content end */
+
+
+/* customized portfolio end */
   @media only screen and (max-width: 1024px)  {
     .testimoni-content > .col-md-12 {
       display: block;
