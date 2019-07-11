@@ -144,6 +144,7 @@ box-shadow :0 5px 15px rgba(0,0,0,0.3);
 
 .product-description{
   font-size: 18px;
+  text-align:justify;
   font-weight: 400;
 }
 
