@@ -1,13 +1,12 @@
 
-function getIP(){
+function getIP(entity){
     $.getJSON('https://api.ipregistry.co/?key=x2nmgnklcrzbso', function(data) {
-        console.log("data api registry "+JSON.stringify(data, null, 2));
-        trackEvent(data);
+        trackEvent(data, entity);
     });    
 }
 
 //get the cookie google analytics
-function trackEvent(data){
+function trackEvent(data,entity){
     ga(function() {
         var trackers = ga.getAll();
         ga(function(tracker) {
@@ -17,30 +16,30 @@ function trackEvent(data){
                 //technology
                 'device':data.user_agent.device.name,
                 'os':data.user_agent.os.name,
-                'browser':'unknown',
+                'browser':data.user_agent.name,
                 'provider':data.carrier.name,
                 'ipAddress':data.ip,
                 'cookieGA':tracker.get('clientId'),
                 'tuid':'unknown',
                 'guid':'unknown',
-                'tdid':'unknown',
+                'tdid':getCookie('TDID'),
 
                 //entity user
-                'email':'unknown',
-                'phone':'unknown',
-                'age':'unknown',
-                'type':'unknown',
-                'gender':'unknown',
-                'location':'unknown',
-                'city':'unknown',
+                'email':entity.email,
+                'phone':entity.phone,
+                'age':entity.age,
+                'type':entity.type,
+                'gender':entity.gender,
+                'location':data.location.country.name,
+                'city':data.location.city,
 
                 //page
-                'page':'unknown',
-                'title':'unknown',
-                'section':'unknown',
-                'category':'unknown',
+                'page':window.location.href,
+                'title':entity.title,
+                'section':entity.section,
+                'category':entity.category,
             }
-            console.log("Data Entity "+JSON.stringify(dataEntity));
+            console.log(entity);
             retrieveCustomerDataCollection(dataEntity)
 
         });
@@ -48,7 +47,6 @@ function trackEvent(data){
 }
 
 function retrieveCustomerDataCollection(dataEntity){
-    console.log("call");
     
     $.ajax({
         url: "/visitlog/savelog",
@@ -59,10 +57,8 @@ function retrieveCustomerDataCollection(dataEntity){
         contentType: "application/json"               
     })
     .done(function (data) {
-        alert("success");
     })
     .fail(function (xhr, textStatus, errorThrown) {
-        alert("fail");
     });
     
 
