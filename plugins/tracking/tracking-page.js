@@ -30,7 +30,7 @@ function trackEvent(data,entity){
                 'age':entity.age,
                 'type':entity.type,
                 'gender':entity.gender,
-                'location':data.location.country.name,
+                'country':data.location.country.name,
                 'city':data.location.city,
 
                 //page
@@ -38,8 +38,9 @@ function trackEvent(data,entity){
                 'title':entity.title,
                 'section':entity.section,
                 'category':entity.category,
+                'clientId':entity.clientId,
             }
-            console.log(entity);
+
             retrieveCustomerDataCollection(dataEntity)
 
         });
@@ -57,6 +58,7 @@ function retrieveCustomerDataCollection(dataEntity){
         contentType: "application/json"               
     })
     .done(function (data) {
+        console.log("success");
     })
     .fail(function (xhr, textStatus, errorThrown) {
     });
