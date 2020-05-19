@@ -58,7 +58,7 @@ function retrieveCustomerDataCollection(dataEntity){
         contentType: "application/json"               
     })
     .done(function (data) {
-        console.log("success");
+        alert("success")
     })
     .fail(function (xhr, textStatus, errorThrown) {
     });
