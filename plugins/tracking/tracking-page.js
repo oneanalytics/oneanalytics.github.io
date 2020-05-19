@@ -31,7 +31,7 @@ function trackEvent(data,entity){
                 'type':entity.type,
                 'gender':entity.gender,
                 'country':data.location.country.name,
-                'city':data.location.city,
+                'city':data.location.region.name,
 
                 //page
                 'page':window.location.href,
