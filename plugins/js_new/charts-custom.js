@@ -14,11 +14,11 @@ $(document).ready(function () {
 generateCharts(LINECHARTEXMPLE, ["Fashion","Handphone"]);
 function generateCharts(lineChartName, segment){
     $.ajax({
-        url: "/dashboard/history-title",
+        url: "http://localhost:8080/jsmarket/web/app_dev.php/customerdata/getListTitle",
         async: true,
         type: "GET",
         dataType: "json",
-        data: { "segment": ["Handphone","Accessories"] },	
+        data: { "segment": segment },	
         contentType: "application/json"               
     }).done(function (data) {
         var dataset = data.message;

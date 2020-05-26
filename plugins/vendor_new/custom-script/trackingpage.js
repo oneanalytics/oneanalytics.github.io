@@ -1,6 +1,5 @@
 
-window.onload=function(){
-    
+
 function getIPXML(){
     var xmlhttp = new XMLHttpRequest();
     var url = "https://api.ipregistry.co/?key=x2nmgnklcrzbso";
@@ -89,4 +88,3 @@ function trackEvent(data,url,title, page,entityUser){
 
 
 
-};
