@@ -65,7 +65,7 @@ function trackEvent(data,entity){
 
 function retrieveCustomerDataCollection(dataEntity){
     var xhr = new XMLHttpRequest();
-    var url = "http://127.0.0.1:8000/api/savelog?log_data="+JSON.stringify(dataEntity);
+    var url = "http://bold-274916.appspot.com/api/savelog?log_data="+JSON.stringify(dataEntity);
 
     xhr.open('GET', url, true);
     xhr.send();
