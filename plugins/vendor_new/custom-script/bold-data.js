@@ -42,7 +42,7 @@ function trackEvent(data,entity){
         'tuid':'unknown',
         'guid':'unknown',
         'tdid':getCookie('TDID'),
-        'campaignId':campaignId,
+        'campaignId':entity.campaignId,
                 
         //entity user
         'email':entity.email,
