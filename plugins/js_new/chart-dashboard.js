@@ -2,16 +2,11 @@
 
 var brandPrimary = 'rgba(51, 179, 90, 1)';
 
-var LINECHARTEXMPLE   = $('#lineChartExample'),
-    PIECHARTEXMPLE    = $('#pieChartExample'),
-    BARCHARTEXMPLE    = $('#barChartExample'),
-    RADARCHARTEXMPLE  = $('#radarChartExample'),
-    POLARCHARTEXMPLE  = $('#polarChartExample');
+var LINECHARTEXMPLE   = $('#lineChartExample');
 var DEVICECHART = $("#deviceChart");
 var GENDERCHART = $("#genderChart");
 var OSRCHART = $("#osChart");
 
-generateLineChart(LINECHARTEXMPLE);
 function generateLineChart(LINECHARTEXMPLE){
     var lineChartExample = new Chart(LINECHARTEXMPLE, {
         type: 'line',
@@ -78,7 +73,8 @@ var pieChartExample = {
     responsive: true
 };
 
-var barChartExample = new Chart(BARCHARTEXMPLE, {
+function generateBarChart(BARCHARTEXMPLE){
+    var barChartExample = new Chart(BARCHARTEXMPLE, {
     type: 'bar',
     data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -132,8 +128,10 @@ var barChartExample = new Chart(BARCHARTEXMPLE, {
         ]
     }
 });
+}
 
 
+function generatePolarChart(POLARCHARTEXMPLE){
 
 var polarChartExample = new Chart(POLARCHARTEXMPLE, {
     type: 'polarArea',
@@ -158,11 +156,14 @@ var polarChartExample = new Chart(POLARCHARTEXMPLE, {
         ]
     }
 });
-
 var polarChartExample = {
     responsive: true
 };
+}
 
+
+
+function generatePolarChart(RADARCHARTEXMPLE){
 
 var radarChartExample = new Chart(RADARCHARTEXMPLE, {
     type: 'radar',
@@ -197,3 +198,4 @@ var radarChartExample = new Chart(RADARCHARTEXMPLE, {
 var radarChartExample = {
     responsive: true
 };
+}
