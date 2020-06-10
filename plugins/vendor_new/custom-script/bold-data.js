@@ -8,12 +8,16 @@ function getResultValue(value){
     return result;
 }
 function collectDataEntity(entity){
-    getDataTechnology(entity)
+    getDataTechnology(entity, false)
+}
+
+function pushTransaction(entity, transaction){
+    getDataTechnology(entity, transaction)
 }
    
 
 //get data technology
-function getDataTechnology(entity){
+function getDataTechnology(entity, segmentAdditional){
     var xhr = new XMLHttpRequest();
     var url = "https://api.ipregistry.co/?key=x2nmgnklcrzbso";
 
@@ -23,6 +27,18 @@ function getDataTechnology(entity){
     xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
         data = xhr.response;
+
+        if(segmentAdditional == false ){
+            entity["transactionId"] = "not set";
+            entity["totalItem"] = "not set";
+            entity["revenue"] = "not set";
+
+        }else{
+            entity["transactionId"] = segmentAdditional.transactionId;
+            entity["totalItem"] = segmentAdditional.totalItem;
+            entity["revenue"] = segmentAdditional.revenue;
+
+        }
 
         trackEvent(data, entity);
         }
@@ -38,7 +54,6 @@ function trackEvent(data,entity){
         'provider':data.carrier.name,
         'ipAddress':data.ip,
         'cookieGA':getCookie('_ga'),
-        //'cookieGA':'te',
         'tuid':'unknown',
         'guid':'unknown',
         'tdid':getCookie('TDID'),
@@ -58,9 +73,16 @@ function trackEvent(data,entity){
         'title':document.title,
         'section':entity.section,
         'category':entity.category,
-        'clientId':entity.clientId
+        'clientId':entity.clientId,
+
+        //transaction
+        'transactionId':entity.transactionId,
+        'totalItem':entity.totalItem,
+        'revenue':entity.revenue
+
     }
-    retrieveCustomerDataCollection(dataEntity)
+    console.log("data "+JSON.stringify(dataEntity) );
+     retrieveCustomerDataCollection(dataEntity)
 }
 
 function retrieveCustomerDataCollection(dataEntity){
