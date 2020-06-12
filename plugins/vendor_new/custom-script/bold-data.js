@@ -81,7 +81,6 @@ function trackEvent(data,entity){
         'revenue':entity.revenue
 
     }
-    console.log("data "+JSON.stringify(dataEntity) );
      retrieveCustomerDataCollection(dataEntity)
 }
 
