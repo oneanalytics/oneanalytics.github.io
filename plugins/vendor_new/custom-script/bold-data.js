@@ -19,7 +19,7 @@ function pushTransaction(entity, transaction){
 //get data technology
 function getDataTechnology(entity, segmentAdditional){
     var xhr = new XMLHttpRequest();
-    var url = "https://api.ipregistry.co/?key=x2nmgnklcrzbso";
+    var url = "https://api.ipregistry.co/?key=4ufqwq4njh8roc";
 
     xhr.open('GET', url, true);
     xhr.send();
