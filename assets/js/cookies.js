@@ -24,3 +24,5 @@ function deleteCookies() {
   
   
             } 
+  console.log("document "+document.cookie);
+}
