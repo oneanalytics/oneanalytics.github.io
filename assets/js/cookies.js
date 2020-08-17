@@ -23,6 +23,5 @@ function deleteCookies() {
                     document.cookie = allCookies[i] + "=;expires=" 
                     + new Date(0).toUTCString(); 
   
-                displayCookies.innerHTML = document.cookie; 
   
             } 
