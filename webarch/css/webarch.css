@@ -5643,6 +5643,11 @@ form legend,
   background-color: #2a2e36;
   color: #8b91a0;
 }
+
+modal-header{
+  min-height:65px;
+}
+
 .popover {
   border-radius: 3px;
   border: none;
@@ -6887,6 +6892,8 @@ code:hover {
   cursor: default;
   text-decoration: none;
 }
+
+
 .nav-tabs {
   margin-bottom: 0px;
   background-color: #d1dade;
