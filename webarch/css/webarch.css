@@ -5645,7 +5645,7 @@ form legend,
 }
 
 .modal-header > .close{
-  min-height:65px;
+  min-height:-32px
 }
 
 .modal-header > h3{
