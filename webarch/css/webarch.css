@@ -5644,7 +5644,7 @@ form legend,
   color: #8b91a0;
 }
 
-.modal-header > button{
+.modal-header > .close{
   min-height:65px;
 }
 
