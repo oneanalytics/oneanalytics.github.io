@@ -5644,11 +5644,11 @@ form legend,
   color: #8b91a0;
 }
 
-.modal-header{
+.modal-header > button{
   min-height:65px;
 }
 
-.modal-header{
+.modal-header > h3{
   font-weight:bold;
 
 }
