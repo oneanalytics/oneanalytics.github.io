@@ -5644,9 +5644,15 @@ form legend,
   color: #8b91a0;
 }
 
-modal-header{
+.modal-header{
   min-height:65px;
 }
+
+.modal-header{
+  font-weight:bold;
+
+}
+
 
 .popover {
   border-radius: 3px;
