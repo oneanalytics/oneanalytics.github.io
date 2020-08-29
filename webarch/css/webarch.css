@@ -5674,28 +5674,7 @@ form legend,
   color: #505458 !important;
   text-align: center;
 }
-.modal {
-  border-radius: 3px;
-}
-.modal-header {
-  text-align: center;
-}
-.modal-header p {
-  color: #8b91a0;
-}
-.modal-body {
-  background-color: #e5e9ec;
-}
-.modal-content {
-  border: 0;
-}
-.modal-footer {
-  border-top: none;
-  box-shadow: none;
-  background-color: #F3F5F6;
-  margin-top: 0;
-  text-align: right;
-}
+
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
