@@ -1506,6 +1506,11 @@ body.boxed-layout .footer-widget {
 .user-info-wrapper.sm {
   margin-left: 26px;
 }
+
+#test2{
+  display:none;
+
+}
 .user-info-wrapper .profile-wrapper {
   height: 65px;
   width: 65px;
