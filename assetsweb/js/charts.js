@@ -51,3 +51,9 @@ function generateSparkline(element, data){
 }
 
 
+    var queryString = window.location.search;
+
+    var urlParams = new URLSearchParams(queryString);
+
+    var dashboardId = urlParams.get('dashboardId')
+    generateDashboard(dashboardId)
